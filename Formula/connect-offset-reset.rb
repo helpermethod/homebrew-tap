@@ -1,9 +1,9 @@
 class ConnectOffsetReset < Formula
   desc "A commandline tool for resetting Kafka Connect source connector offsets."
   homepage "https://github.com/helpermethod/connect-offset-reset"
-  version "0.0.24"
-  url "https://github.com/helpermethod/connect-offset-reset/releases/download/v0.0.24/connect-offset-reset-0.0.24-osx-x86_64.zip"
-  sha256 "89bfcb07934cf85d5f581149105a7185d86c3b5fa925743c71ad88343adc3bb6"
+  version "0.0.25"
+  url "https://github.com/helpermethod/connect-offset-reset/releases/download/v0.0.25/connect-offset-reset-0.0.25-osx-x86_64.zip"
+  sha256 "601ff310897089b69148d1c7347defbac33f756ee4294e35fc744d0cb8e0c6b1"
   license "Apache-2"
 
   bottle :unneeded
@@ -16,6 +16,6 @@ class ConnectOffsetReset < Formula
 
   test do
     output = shell_output("#{bin}/connect-offset-reset --version")
-    assert_match "0.0.24", output
+    assert_match "0.0.25", output
   end
 end
