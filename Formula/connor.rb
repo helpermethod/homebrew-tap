@@ -1,12 +1,10 @@
 class Connor < Formula
   desc "A commandline tool for resetting Kafka Connect source connector offsets."
   homepage "https://github.com/helpermethod/connor"
-  version "1.0.0"
-  url "https://github.com/helpermethod/connor/releases/download/v1.0.0/connor-1.0.0-osx-x86_64.zip"
-  sha256 "6cb8409b4fd4b222347e2a68fea026a10625e738ca84850cb6e293c3985f4061"
+  url "https://github.com/helpermethod/connor/releases/download/v1.2.0/connor-1.2.0-osx-x86_64.zip"
+  version "1.2.0"
+  sha256 "a3c4f5701bee1f56a25cf11f70d6449ff34691ad499ea8b5baaba12328acb719"
   license "Apache-2"
-
-  bottle :unneeded
 
 
   def install
@@ -16,6 +14,6 @@ class Connor < Formula
 
   test do
     output = shell_output("#{bin}/connor --version")
-    assert_match "1.0.0", output
+    assert_match "1.2.0", output
   end
 end
