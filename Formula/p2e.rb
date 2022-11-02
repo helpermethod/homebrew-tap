@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.2.0 at 2022-09-13T10:16:21.342262Z
+# Generated with JReleaser 1.3.0 at 2022-11-02T19:57:16.070152Z
 class P2e < Formula
   desc "Convert Spring configuration property names to environment variable names."
   homepage "https://github.com/helpermethod/p2e"
-  url "https://github.com/helpermethod/p2e/releases/download/v0.1.3/p2e-0.1.3-osx-x86_64.zip"
-  version "0.1.3"
-  sha256 "63e0ee979282dc7c010836ca405dac064136734db0e55c552c579f1b51b2dc7a"
+  url "https://github.com/helpermethod/p2e/releases/download/v0.1.4/p2e-0.1.4-osx-x86_64.zip"
+  version "0.1.4"
+  sha256 "02f88f45f17a49bf6de0a06a79c64c5d03158ba17cb64039bfd42e8ff508f5b0"
   license "Apache-2"
 
 
@@ -15,6 +15,6 @@ class P2e < Formula
 
   test do
     output = shell_output("#{bin}/p2e --version")
-    assert_match "0.1.3", output
+    assert_match "0.1.4", output
   end
 end
